@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(170, 170, 207);
+}
+
+#play,#next,#previous{
+    cursor: pointer;
+    width: 50px;
+    height:50px;
+    background-color: rgb(0, 174, 255);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-shadow: 0px -1px 20px -1px rgb(60, 60, 60);
+    margin: 8px auto 6px auto;
+}
+.fa-solid-button{
+    background-color: rgb(0, 174, 255);
+    color: white;
+font-size: 20px;
+}
+
+.musicname{
+    width: 300px;
+    color: rgb(224, 23, 57);
+    margin-top: 3px;
+}
+.musicplayer{
+    overflow: hidden;
+    width: 350px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px -1px 20px -1px rgb(137, 137, 137);
+}
+
+.upperpart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.fa-solid-list{
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+.fa-solid-list:active{
+    color: red;
+}
+.list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list .list_item{
+    list-style: none;
+    padding: 3px 30px;
+}
+.fa-heart{
+  color: rgb(210, 225, 235);
+}
+
+.fa-heart-red{
+    color: red;
+}
+.musiclist{
+    transform: translateY(285px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0px -1px 20px -1px rgb(137, 137, 137);
+    transition: transform ease-in-out .3s;
+}
+.musiclist .list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.musiclist .list .music_item{
+    list-style: none;
+    cursor: pointer;
+}
+
+.musiclist .list .music_item marquee{
+    width: 100%;
+    margin-top: 2px;
+    padding: 5px 0px;
+    text-align: left;
+    background-color:azure;
+}
+.musiclist .list .music_item marquee:hover{
+color: rgb(241, 25, 61);
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.fa-shuffle-red{
+    color: red;
+}
+#imageupper{
+    width: 240px;
+    height: 227px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 3px 13px;
+}
+#progressbar{
+    cursor: pointer;
+    margin-top: 8px;
+    width: 250px;
+    height: 5px;
+    -webkit-appearance: none;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: rgb(241, 25, 61);
+}
+
+#progressbar::-webkit-progress-bar
+{
+    -webkit-appearance: none;
+    height:5px;
+    width: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color:rgb(241, 25, 61) ;
+}
+
+/* ADD section */
+.add_section{
+    display:none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    top: -300px;
+}
+
+.add_visible{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    background-color: white;
+    top: -300px;
+}
+#inputadd{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(5, 145, 233);
+    width: 280px;
+    height: 30px;
+    outline: none;
+    border:1px solid rgb(5, 145, 233);
+}
+
+ #add_music{
+    cursor: pointer;
+    outline: none;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-size: 20px;
+    color: white;
+    background: rgb(5, 145, 233);
+    border-radius: 5px;
+}
+  
+/* ---------------------------------------- */

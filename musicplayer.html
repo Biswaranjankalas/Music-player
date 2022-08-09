@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSIC</title>
+    <link rel="stylesheet" href="musicplayer.css">
+    <script src="https://kit.fontawesome.com/5db656e81c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Audio Element  -->
+    <audio src=""
+        id="audio"></audio>
+        <!-- End of audio element -->
+
+        <!-- Full music player app -->
+    <div class="musicplayer">
+        <!-- UpperPart of music player -->
+        <div class="upperpart">
+            <img src="caucasian-woman-s-portrait-isolated-blue-background-multicolored-neon-light_155003-32526.jpg" alt="" id="imageupper">
+            <input type="range" value="0" id="progressbar">
+        </div>
+        <!-- buttomPart of music player  -->
+        <div class="buttom_patr" >
+        <div class="musicname">
+            <marquee behavior="float" direction="alternate" id="musicname">
+
+            </marquee>
+        </div>
+        <div class="buttons">
+            <button id="previous"><i class="fa-solid fa-backward fa-solid-button" title="Previous"></i></button>
+            <button id="play"><i class="fa-solid fa-play fa-solid-button" id="playbtn" title="Play"></i></button>
+            <button id="next"><i class="fa-solid fa-forward fa-solid-button" title="Next"></i></button>
+        </div>
+        <div class="lists">
+            <ul class="list">
+                <li class="list_item"><i class="fa-solid fa-ellipsis-vertical fa-solid-list" title="List"><i
+                            class="fa-solid fa-bars" title="List"></i></i></li>
+                <li class="list_item"><i class="fa-solid fa-circle-plus fa-solid-list" title="Add Music"></i></i></li>
+                <li class="list_item" ><i class="fa-solid fa-shuffle fa-solid-list fa-suffle" title="Shuffle"></i></li>
+                <li class="list_item"><i class="fa-solid fa-ellipsis-vertical fa-solid-list"></i></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ButtomPart of music player ends here -->
+    <!-- Add music division starts here -->
+    <div class="add_section">
+        <input type="text" class="input" id="inputadd" placeholder="Enter file path">
+        <button class="button" id="add_music">ADD</button>
+    </div>
+    <!-- Add music division Ends here -->
+
+    <!-- Music List  -->
+        <div class="musiclist">
+            <ul class="list">
+                <li class="music_item"><marquee>_GURI_(Official_Song)_Satti_Dhillon__GK.DIGITAL__Latest_Songs__Geet_MP3(128k).m4a</marquee></li>
+                <li class="music_item"><marquee>Jass_Manak_Ft._Emiway_Bantai_(Full_Video)_Satti_Dhillon__Deep_Jandu__GK__Geet_MP3(128k).m4a</marquee></li>
+                <li class="music_item"><marquee>_Karan_Randhawa_(Official_Video)_Shipra_Goyal,_Anjali_Arora__New_Punjabi_Songs__Geet_MP3(128k).m4a</marquee></li>
+                <li class="music_item"><marquee>Akhi_Akhire_Kichi_Kahilu_(Melodic_Remix)Dj_Liku_Official(OdiaRemix.Com).mp3(128k).m4a</marquee></li>
+                <li class="music_item"><marquee>Tribal_chief_💙💙💙💙.mp3</marquee></li>
+                <li class="music_item"><marquee>y2mate.com - RasabatiGulua Dialogue X Dance MixDj YAS Bbsr ft Dj Rahul CreativeDownload link in description .mp3</marquee></li>
+            </ul>
+        </div>
+        <!-- Music list ends here -->
+    </div>
+    <!-- Music player app ends here -->
+    <script src="musicplayer.js"></script>
+</body>
+
+</html>
